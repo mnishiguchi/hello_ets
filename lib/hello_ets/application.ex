@@ -8,8 +8,7 @@ defmodule HelloEts.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: HelloEts.Worker.start_link(arg)
-      # {HelloEts.Worker, arg}
+      {CubDB, [data_dir: "tmp", name: CubDB]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
