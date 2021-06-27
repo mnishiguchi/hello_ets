@@ -23,6 +23,10 @@ defmodule HelloEts.MixProject do
   defp deps do
     [
       {:cubdb, "~> 1.0"},
+      {:cachex, "~> 3.4"},
+      {:ets, "~> 0.8"},
+      {:stash, "~> 1.0"},
+      {:mix_test_watch, "~> 1.0", only: :dev, runtime: false}
     ]
   end
 end
